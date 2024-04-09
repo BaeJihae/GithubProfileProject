@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3A135F2BC58E5C00BC38E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3A135E2BC58E5C00BC38E4 /* Alamofire */; };
+		2E3A13612BC58E5C00BC38E4 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3A13602BC58E5C00BC38E4 /* AlamofireDynamic */; };
 		2EDAF53F2BB94E6400CC8ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF53E2BB94E6400CC8ADD /* AppDelegate.swift */; };
 		2EDAF5412BB94E6400CC8ADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF5402BB94E6400CC8ADD /* SceneDelegate.swift */; };
 		2EDAF5432BB94E6400CC8ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF5422BB94E6400CC8ADD /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3A135F2BC58E5C00BC38E4 /* Alamofire in Frameworks */,
+				2E3A13612BC58E5C00BC38E4 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +63,8 @@
 				2EDAF53E2BB94E6400CC8ADD /* AppDelegate.swift */,
 				2EDAF5402BB94E6400CC8ADD /* SceneDelegate.swift */,
 				2EDAF5422BB94E6400CC8ADD /* ViewController.swift */,
-				2EDAF5442BB94E6400CC8ADD /* Main.storyboard */,
 				2EDAF5472BB94E6600CC8ADD /* Assets.xcassets */,
+				2EDAF5442BB94E6400CC8ADD /* Main.storyboard */,
 				2EDAF5492BB94E6600CC8ADD /* LaunchScreen.storyboard */,
 				2EDAF54C2BB94E6600CC8ADD /* Info.plist */,
 			);
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = GighubProject;
+			packageProductDependencies = (
+				2E3A135E2BC58E5C00BC38E4 /* Alamofire */,
+				2E3A13602BC58E5C00BC38E4 /* AlamofireDynamic */,
+			);
 			productName = GighubProject;
 			productReference = 2EDAF53B2BB94E6400CC8ADD /* GighubProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 2EDAF5322BB94E6400CC8ADD;
+			packageReferences = (
+				2E3A135D2BC58E5C00BC38E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2E3A13622BC58E7B00BC38E4 /* XCRemoteSwiftPackageReference "cli" */,
+			);
 			productRefGroup = 2EDAF53C2BB94E6400CC8ADD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,6 +383,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E3A135D2BC58E5C00BC38E4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		2E3A13622BC58E7B00BC38E4 /* XCRemoteSwiftPackageReference "cli" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cli/cli.git";
+			requirement = {
+				branch = trunk;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E3A135E2BC58E5C00BC38E4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E3A135D2BC58E5C00BC38E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2E3A13602BC58E5C00BC38E4 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E3A135D2BC58E5C00BC38E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EDAF5332BB94E6400CC8ADD /* Project object */;
 }
