@@ -15,7 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.2823529541" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.23529411759999999" green="0.2823529541" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -23,4 +24,5 @@
             <point key="canvasLocation" x="-1634.3511450381679" y="39.436619718309863"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.23529411759999999" green="0.2823529541" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

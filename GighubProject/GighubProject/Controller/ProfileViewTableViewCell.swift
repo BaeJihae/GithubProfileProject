@@ -8,7 +8,11 @@
 import UIKit
 
 class ProfileViewTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var repoName: UILabel!
+    @IBOutlet weak var repoStarts: UILabel!
+    @IBOutlet weak var repoLanguage: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

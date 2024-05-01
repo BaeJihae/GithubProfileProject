@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E167A2F2BCCC1D20028A37D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E167A2E2BCCC1D20028A37D /* User.swift */; };
 		2E3A13552BC5026200BC38E4 /* ProfileViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A13542BC5026200BC38E4 /* ProfileViewTableViewCell.xib */; };
 		2E3A13562BC5026200BC38E4 /* ProfileViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A13532BC5026200BC38E4 /* ProfileViewTableViewCell.swift */; };
-		2E3A135C2BC5124000BC38E4 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A135B2BC5124000BC38E4 /* ExtensionViewController.swift */; };
+		2E3A135C2BC5124000BC38E4 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A135B2BC5124000BC38E4 /* ViewController+extension.swift */; };
 		2E3A135F2BC58E5C00BC38E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3A135E2BC58E5C00BC38E4 /* Alamofire */; };
 		2E3A13612BC58E5C00BC38E4 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3A13602BC58E5C00BC38E4 /* AlamofireDynamic */; };
+		2E3A13642BC61B1300BC38E4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A13632BC61B1300BC38E4 /* Repository.swift */; };
+		2E3A13662BC61DFC00BC38E4 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A13652BC61DFC00BC38E4 /* RepositoryManager.swift */; };
+		2E9D7D2E2BD3FC4400ADD31D /* MainUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D7D2D2BD3FC4400ADD31D /* MainUIView.swift */; };
 		2EDAF53F2BB94E6400CC8ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF53E2BB94E6400CC8ADD /* AppDelegate.swift */; };
 		2EDAF5412BB94E6400CC8ADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF5402BB94E6400CC8ADD /* SceneDelegate.swift */; };
 		2EDAF5432BB94E6400CC8ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAF5422BB94E6400CC8ADD /* ViewController.swift */; };
@@ -21,9 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E167A2E2BCCC1D20028A37D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E3A13532BC5026200BC38E4 /* ProfileViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTableViewCell.swift; sourceTree = "<group>"; };
 		2E3A13542BC5026200BC38E4 /* ProfileViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewTableViewCell.xib; sourceTree = "<group>"; };
-		2E3A135B2BC5124000BC38E4 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		2E3A135B2BC5124000BC38E4 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
+		2E3A13632BC61B1300BC38E4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		2E3A13652BC61DFC00BC38E4 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
+		2E9D7D2D2BD3FC4400ADD31D /* MainUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIView.swift; sourceTree = "<group>"; };
 		2EDAF53B2BB94E6400CC8ADD /* GighubProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GighubProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDAF53E2BB94E6400CC8ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDAF5402BB94E6400CC8ADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E9D7D2A2BD3FA6C00ADD31D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAF5442BB94E6400CC8ADD /* Main.storyboard */,
+				2E3A13542BC5026200BC38E4 /* ProfileViewTableViewCell.xib */,
+				2EDAF5492BB94E6600CC8ADD /* LaunchScreen.storyboard */,
+				2E9D7D2D2BD3FC4400ADD31D /* MainUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E9D7D2B2BD3FA7000ADD31D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAF5422BB94E6400CC8ADD /* ViewController.swift */,
+				2E3A135B2BC5124000BC38E4 /* ViewController+extension.swift */,
+				2E3A13532BC5026200BC38E4 /* ProfileViewTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E9D7D2C2BD3FA7600ADD31D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A13652BC61DFC00BC38E4 /* RepositoryManager.swift */,
+				2E3A13632BC61B1300BC38E4 /* Repository.swift */,
+				2E167A2E2BCCC1D20028A37D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2EDAF5322BB94E6400CC8ADD = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +105,12 @@
 		2EDAF53D2BB94E6400CC8ADD /* GighubProject */ = {
 			isa = PBXGroup;
 			children = (
-				2E3A13532BC5026200BC38E4 /* ProfileViewTableViewCell.swift */,
-				2E3A13542BC5026200BC38E4 /* ProfileViewTableViewCell.xib */,
 				2EDAF53E2BB94E6400CC8ADD /* AppDelegate.swift */,
 				2EDAF5402BB94E6400CC8ADD /* SceneDelegate.swift */,
-				2EDAF5422BB94E6400CC8ADD /* ViewController.swift */,
-				2E3A135B2BC5124000BC38E4 /* ExtensionViewController.swift */,
-				2EDAF5442BB94E6400CC8ADD /* Main.storyboard */,
+				2E9D7D2C2BD3FA7600ADD31D /* Model */,
+				2E9D7D2A2BD3FA6C00ADD31D /* View */,
+				2E9D7D2B2BD3FA7000ADD31D /* Controller */,
 				2EDAF5472BB94E6600CC8ADD /* Assets.xcassets */,
-				2EDAF5492BB94E6600CC8ADD /* LaunchScreen.storyboard */,
 				2EDAF54C2BB94E6600CC8ADD /* Info.plist */,
 			);
 			path = GighubProject;
@@ -159,11 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3A13662BC61DFC00BC38E4 /* RepositoryManager.swift in Sources */,
 				2EDAF5432BB94E6400CC8ADD /* ViewController.swift in Sources */,
 				2EDAF53F2BB94E6400CC8ADD /* AppDelegate.swift in Sources */,
 				2E3A13562BC5026200BC38E4 /* ProfileViewTableViewCell.swift in Sources */,
+				2E167A2F2BCCC1D20028A37D /* User.swift in Sources */,
 				2EDAF5412BB94E6400CC8ADD /* SceneDelegate.swift in Sources */,
-				2E3A135C2BC5124000BC38E4 /* ExtensionViewController.swift in Sources */,
+				2E3A135C2BC5124000BC38E4 /* ViewController+extension.swift in Sources */,
+				2E3A13642BC61B1300BC38E4 /* Repository.swift in Sources */,
+				2E9D7D2E2BD3FC4400ADD31D /* MainUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
