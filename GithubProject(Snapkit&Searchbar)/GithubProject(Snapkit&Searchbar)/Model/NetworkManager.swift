@@ -72,7 +72,7 @@ final class NetworkManager {
     */
     
     // 유저 프로필
-    func fetchUserRepository(userName: String, completion: @escaping (Result<GithubUser, Error>) -> Void) {
+    func fetchUserProfile(userName: String, completion: @escaping (Result<GithubUser, Error>) -> Void) {
         let url = url + "\(userName)"
         
         AF.request(url).responseDecodable(of: GithubUser.self) { response in
@@ -87,7 +87,7 @@ final class NetworkManager {
     
     // 레포지토리
     func fetchUserRepository(userName: String, page: Int, completion: @escaping (Result<[GitRepository], Error>) -> Void) {
-        let url = url + "\(userName)?page=\(page)"
+        let url = url + "\(userName)/repos?page=\(page)"
         
         AF.request(url).responseDecodable(of: [GitRepository].self) { response in
             switch response.result {

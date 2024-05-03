@@ -7,13 +7,14 @@
 
 import Foundation
 
-struct GitRepository: Decodable {
-    var name: String
-    var stargazersCount: Int
-    var language: String
+struct GitRepository: Codable {
+    let name: String
+    let stargazersCount: Int
+    let language: String?
     
-    enum GitRepository: String, CodingKey {
-        case name, language
+    enum CodingKeys: String, CodingKey {
+        case name
         case stargazersCount = "stargazers_count"
+        case language
     }
 }

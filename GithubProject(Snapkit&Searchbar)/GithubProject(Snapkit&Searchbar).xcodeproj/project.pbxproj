@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E170A2A2BE3708400CC8F1D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E170A292BE3708400CC8F1D /* MainView.swift */; };
+		2E170A2D2BE3739200CC8F1D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E170A2C2BE3739200CC8F1D /* SnapKit */; };
+		2E170A2F2BE3739200CC8F1D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2E170A2E2BE3739200CC8F1D /* SnapKit-Dynamic */; };
+		2E170A322BE3B60600CC8F1D /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E170A312BE3B60600CC8F1D /* RepositoryTableViewCell.xib */; };
+		2E170A332BE3B60600CC8F1D /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E170A302BE3B60600CC8F1D /* RepositoryTableViewCell.swift */; };
 		2E2C55C42BE286BC002753EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C55C32BE286BC002753EF /* AppDelegate.swift */; };
 		2E2C55C62BE286BC002753EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C55C52BE286BC002753EF /* SceneDelegate.swift */; };
 		2E2C55C82BE286BC002753EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C55C72BE286BC002753EF /* ViewController.swift */; };
@@ -22,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E170A292BE3708400CC8F1D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2E170A302BE3B60600CC8F1D /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		2E170A312BE3B60600CC8F1D /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		2E2C55C02BE286BC002753EF /* GithubProject(Snapkit&Searchbar).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GithubProject(Snapkit&Searchbar).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C55C32BE286BC002753EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C55C52BE286BC002753EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E170A2F2BE3739200CC8F1D /* SnapKit-Dynamic in Frameworks */,
 				2E2C55E62BE28DAF002753EF /* Kingfisher in Frameworks */,
+				2E170A2D2BE3739200CC8F1D /* SnapKit in Frameworks */,
 				2E2C55E12BE28D55002753EF /* Alamofire in Frameworks */,
 				2E2C55E32BE28D55002753EF /* AlamofireDynamic in Frameworks */,
 			);
@@ -49,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E170A282BE3704100CC8F1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C55C72BE286BC002753EF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2E2C55B72BE286BC002753EF = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +86,11 @@
 		2E2C55C22BE286BC002753EF /* GithubProject(Snapkit&Searchbar) */ = {
 			isa = PBXGroup;
 			children = (
-				2E2C55DC2BE28D0E002753EF /* New Group */,
-				2E2C55D72BE2892A002753EF /* Model */,
 				2E2C55C32BE286BC002753EF /* AppDelegate.swift */,
 				2E2C55C52BE286BC002753EF /* SceneDelegate.swift */,
-				2E2C55C72BE286BC002753EF /* ViewController.swift */,
-				2E2C55C92BE286BC002753EF /* Main.storyboard */,
+				2E170A282BE3704100CC8F1D /* Controller */,
+				2E2C55DC2BE28D0E002753EF /* View */,
+				2E2C55D72BE2892A002753EF /* Model */,
 				2E2C55CC2BE286BD002753EF /* Assets.xcassets */,
 				2E2C55CE2BE286BD002753EF /* LaunchScreen.storyboard */,
 				2E2C55D12BE286BD002753EF /* Info.plist */,
@@ -91,11 +108,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2E2C55DC2BE28D0E002753EF /* New Group */ = {
+		2E2C55DC2BE28D0E002753EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C55C92BE286BC002753EF /* Main.storyboard */,
+				2E170A292BE3708400CC8F1D /* MainView.swift */,
+				2E170A302BE3B60600CC8F1D /* RepositoryTableViewCell.swift */,
+				2E170A312BE3B60600CC8F1D /* RepositoryTableViewCell.xib */,
 			);
-			path = "New Group";
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +139,8 @@
 				2E2C55E02BE28D55002753EF /* Alamofire */,
 				2E2C55E22BE28D55002753EF /* AlamofireDynamic */,
 				2E2C55E52BE28DAF002753EF /* Kingfisher */,
+				2E170A2C2BE3739200CC8F1D /* SnapKit */,
+				2E170A2E2BE3739200CC8F1D /* SnapKit-Dynamic */,
 			);
 			productName = "GithubProject(Snapkit&Searchbar)";
 			productReference = 2E2C55C02BE286BC002753EF /* GithubProject(Snapkit&Searchbar).app */;
@@ -150,6 +173,7 @@
 			packageReferences = (
 				2E2C55DF2BE28D55002753EF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2E2C55E42BE28DAF002753EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2E170A2B2BE3739200CC8F1D /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 2E2C55C12BE286BC002753EF /* Products */;
 			projectDirPath = "";
@@ -168,6 +192,7 @@
 				2E2C55CD2BE286BD002753EF /* Assets.xcassets in Resources */,
 				2E2C55D02BE286BD002753EF /* Base in Resources */,
 				2E2C55CB2BE286BC002753EF /* Base in Resources */,
+				2E170A322BE3B60600CC8F1D /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2C55DE2BE28D26002753EF /* NetworkManager.swift in Sources */,
+				2E170A2A2BE3708400CC8F1D /* MainView.swift in Sources */,
 				2E2C55C82BE286BC002753EF /* ViewController.swift in Sources */,
+				2E170A332BE3B60600CC8F1D /* RepositoryTableViewCell.swift in Sources */,
 				2E2C55DB2BE28B4D002753EF /* GitRepository.swift in Sources */,
 				2E2C55C42BE286BC002753EF /* AppDelegate.swift in Sources */,
 				2E2C55C62BE286BC002753EF /* SceneDelegate.swift in Sources */,
@@ -418,6 +445,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2E170A2B2BE3739200CC8F1D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		2E2C55DF2BE28D55002753EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -437,6 +472,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2E170A2C2BE3739200CC8F1D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E170A2B2BE3739200CC8F1D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		2E170A2E2BE3739200CC8F1D /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E170A2B2BE3739200CC8F1D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		2E2C55E02BE28D55002753EF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2E2C55DF2BE28D55002753EF /* XCRemoteSwiftPackageReference "Alamofire" */;
